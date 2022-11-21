@@ -1,0 +1,9 @@
+def inyeccion2(packet):
+    import random
+
+    packet['TCP']['srcport'] = random.randint(0, 50000)
+
+    print("El puerto fue modificado")
+    print(packet)
+
+    return packet

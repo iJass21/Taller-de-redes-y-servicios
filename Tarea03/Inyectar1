@@ -1,0 +1,9 @@
+def inyeccion1(packet):
+    import random
+
+    ack_nuevo = random.randint(0, 100)
+    packet['TCP']['ack'] = hex(ack_nuevo)
+
+    print("new ack")
+
+    return packet

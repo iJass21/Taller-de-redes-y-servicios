@@ -1,0 +1,8 @@
+def modificar2(packet):
+    if "NICK" in packet['IRC']['response']
+        packet['IRC']['response'] == packet['IRC']['response'].replace("root", "matias")
+        print("El paquete fue modificado")
+
+        return packet
+    else:
+    return None

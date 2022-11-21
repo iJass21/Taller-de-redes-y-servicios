@@ -1,0 +1,8 @@
+def modificar1(packet):
+    if "PRIVMSG" in packet['IRC']['response']
+        packet['IRC']['response'] == packet['IRC']['response'].replace("hola", "chao")
+        print("El paquete fue modificado")
+
+        return packet
+    else:
+        return None
